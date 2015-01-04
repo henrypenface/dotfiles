@@ -39,8 +39,8 @@ URxvt*colorUL: #9695b5
 URxvt*internalBorder:0
 URxvt*borderColor: rgba:0000/0000/0200/c800
 
-URxvt*font: xft:terminus:size=8
-URxvt*boldFont: xft:terminus:size=1
+URxvt*font: xft:dina:size=8
+URxvt*boldFont: xft:dina:size=8
 URxvt*keysym.Home: \033[1~
 URxvt*keysym.End: \033[4~
 

@@ -3,3 +3,5 @@ PS1="\$? \$(if [[ \$? == 0 ]]; then echo \"\[\033[0;32m\]:)\"; else echo \"\[\03
 
 # Random fortune when logging in
 [[ "$PS1" ]] && echo -e "$(fortune)"
+
+export SVN_EDITOR=vim

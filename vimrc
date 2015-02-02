@@ -19,3 +19,6 @@ set backspace=2
 " Visual stuff
 set laststatus=2
 let g:lightline = { 'colorscheme': 'wombat', }
+
+" File type shenanigans
+au BufRead,BufNewFile *.dust set filetype=html

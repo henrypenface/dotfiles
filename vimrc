@@ -15,6 +15,7 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 set backspace=2
+set expandtab
 
 " Visual stuff
 set laststatus=2

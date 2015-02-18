@@ -3,14 +3,17 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call vundle#rc()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'kchmck/vim-coffee-script'
 
-call vundle#end()
+syntax enable
+filetype plugin indent on
 
 syntax on
+
 set tabstop=4
 set shiftwidth=4
 set autoindent

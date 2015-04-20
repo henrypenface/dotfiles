@@ -42,6 +42,9 @@ bindsym $mod+space exec dmenu_run
 # Lock the screen using the lock script
 bindsym $mod+l exec sh ~/.i3/lock
 
+# Move container to another screen (toggle screen in dual display)
+bindsym $mod+x move workspace to output right
+
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down

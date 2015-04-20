@@ -5,3 +5,4 @@ PS1="\$? \$(if [[ \$? == 0 ]]; then echo \"\[\033[0;32m\]:)\"; else echo \"\[\03
 [[ "$PS1" ]] && echo -e "$(fortune)"
 
 export SVN_EDITOR=vim
+export PATH=$PATH:~/bin

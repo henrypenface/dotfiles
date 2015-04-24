@@ -21,7 +21,7 @@ font pango:dina 8
 new_window none
 
 #but allow me to cycle them if needed
-bindsym $mod+Shift+b border toggle
+bindsym $mod+b border toggle
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1

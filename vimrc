@@ -8,6 +8,7 @@ call vundle#rc()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'wookiehangover/jshint.vim'
 
 syntax enable
 filetype plugin indent on

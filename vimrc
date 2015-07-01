@@ -8,7 +8,7 @@ call vundle#rc()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'wookiehangover/jshint.vim'
+Plugin 'sjl/gundo.vim'
 
 syntax enable
 filetype plugin indent on
@@ -27,3 +27,19 @@ let g:lightline = { 'colorscheme': 'wombat', }
 
 " File type shenanigans
 au BufRead,BufNewFile *.dust set filetype=html
+
+"Some remapping for speed
+let mapleader = "\<Space>"
+
+nnoremap <Leader>. :o .<CR>
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>x :wq<CR>
+nnoremap <Leader>q :sav .recover<CR>:q!<CR>
+
+" Window movement
+nnoremap <Leader><Left> <c-w><Left>
+nnoremap <Leader><Right> <c-w><Right>
+nnoremap <Leader><Up> <c-w><Up>
+nnoremap <Leader><Down> <c-w><Down>
+
+nnoremap <Leader>u :GundoToggle<CR>

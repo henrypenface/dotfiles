@@ -34,7 +34,7 @@ let mapleader = "\<Space>"
 nnoremap <Leader>. :o .<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>x :wq<CR>
-nnoremap <Leader>q :sav .recover<CR>:q!<CR>
+nnoremap <Leader>:q!<CR>
 
 " Window movement
 nnoremap <Leader><Left> <c-w><Left>

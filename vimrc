@@ -24,6 +24,12 @@ set expandtab
 " Visual stuff
 set laststatus=2
 let g:lightline = { 'colorscheme': 'wombat', }
+set cursorline
+set wildmenu
+set showmatch
+
+set incsearch
+set hlsearch
 
 " File type shenanigans
 au BufRead,BufNewFile *.dust set filetype=html
@@ -35,6 +41,7 @@ nnoremap <Leader>. :o .<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>x :wq<CR>
 nnoremap <Leader>:q!<CR>
+nnoremap <Leader>l :nohlsearch<CR>
 
 " Window movement
 nnoremap <Leader><Left> <c-w><Left>

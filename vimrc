@@ -49,3 +49,9 @@ nnoremap <Leader><Up> <c-w><Up>
 nnoremap <Leader><Down> <c-w><Down>
 
 nnoremap <Leader>u :GundoToggle<CR>
+
+" Some gui shizzle
+colorscheme slate
+if has('gui_running')
+    set guifont=Terminus:h9
+endif

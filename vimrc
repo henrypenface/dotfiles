@@ -51,7 +51,8 @@ nnoremap <Leader><Down> <c-w><Down>
 nnoremap <Leader>u :GundoToggle<CR>
 
 " Some gui shizzle
-colorscheme slate
 if has('gui_running')
+    colorscheme evening
     set guifont=Terminus:h9
+    set guioptions-=T
 endif

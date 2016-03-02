@@ -9,6 +9,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'sjl/gundo.vim'
+Plugin 'scrooloose/nerdtree'
 
 syntax enable
 filetype plugin indent on
@@ -27,6 +28,7 @@ let g:lightline = { 'colorscheme': 'wombat', }
 set cursorline
 set wildmenu
 set showmatch
+set number 
 
 set incsearch
 set hlsearch
@@ -41,6 +43,7 @@ nnoremap <Leader>. :o .<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>x :wq<CR>
 nnoremap <Leader>l :nohlsearch<CR>
+nnoremap <Leader>t :NERDTreeToggle<CR>
 
 " Window movement
 nnoremap <Leader><Left> <c-w><Left>
@@ -56,3 +59,6 @@ if has('gui_running')
     set guifont=Terminus:h9
     set guioptions-=T
 endif
+
+" Plugin Options
+let NERDTreeQuitOnOpen=1

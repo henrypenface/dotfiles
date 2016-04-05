@@ -1,4 +1,6 @@
 " vim config for @henrypenface / carlclegg@gmail.com
+set shell=/bin/bash
+
 set nocompatible
 filetype off
 
@@ -10,6 +12,7 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'sjl/gundo.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jeetsukumaran/vim-buffergator'
 
 syntax enable
 filetype plugin indent on
@@ -39,19 +42,22 @@ au BufRead,BufNewFile *.dust set filetype=html
 "Some remapping for speed
 let mapleader = "\<Space>"
 
+" Basic changes to use leader
 nnoremap <Leader>. :o .<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>x :wq<CR>
-nnoremap <Leader>l :nohlsearch<CR>
-nnoremap <Leader>t :NERDTreeToggle<CR>
+" nnoremap <Leader>l :nohlsearch<CR>
 
 " Window movement
-nnoremap <Leader><Left> <c-w><Left>
-nnoremap <Leader><Right> <c-w><Right>
-nnoremap <Leader><Up> <c-w><Up>
-nnoremap <Leader><Down> <c-w><Down>
+nnoremap <Leader>h <c-w><Left>
+nnoremap <Leader>l <c-w><Right>
+nnoremap <Leader>k <c-w><Up>
+nnoremap <Leader>j <c-w><Down>
 
+" Plugin commands
 nnoremap <Leader>u :GundoToggle<CR>
+nnoremap <Leader>b :BuffergatorToggle<CR>
+nnoremap <Leader>t :NERDTreeToggle<CR>
 
 " Some gui shizzle
 if has('gui_running')
@@ -62,3 +68,4 @@ endif
 
 " Plugin Options
 let NERDTreeQuitOnOpen=1
+let g:buffergator_suppress_keymaps=1

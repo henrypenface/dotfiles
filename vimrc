@@ -13,6 +13,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'sjl/gundo.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'freitass/todo.txt-vim'
 
 syntax enable
 filetype plugin indent on
@@ -68,6 +69,6 @@ endif
 
 " Plugin Options
 let NERDTreeQuitOnOpen=1
-let g:buffergator_suppress_keymaps=1
 
+let g:buffergator_suppress_keymaps=1
 let g:buffergator_viewport_split_policy="B"

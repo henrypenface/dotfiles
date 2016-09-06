@@ -14,6 +14,7 @@ Plugin 'sjl/gundo.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'freitass/todo.txt-vim'
+Plugin 'ryanss/vim-hackernews'
 
 syntax enable
 filetype plugin indent on

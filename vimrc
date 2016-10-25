@@ -50,6 +50,8 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>x :wq<CR>
 " nnoremap <Leader>l :nohlsearch<CR>
 
+imap jj <esc>
+
 " Window movement
 nnoremap <Leader>h <c-w><Left>
 nnoremap <Leader>l <c-w><Right>
@@ -60,6 +62,7 @@ nnoremap <Leader>j <c-w><Down>
 nnoremap <Leader>u :GundoToggle<CR>
 nnoremap <Leader>b :BuffergatorToggle<CR>
 nnoremap <Leader>t :NERDTreeToggle<CR>
+nnoremap <Leader>n :HackerNews<CR>
 
 " Some gui shizzle
 if has('gui_running')

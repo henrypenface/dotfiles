@@ -9,12 +9,10 @@ call vundle#rc()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'sjl/gundo.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jeetsukumaran/vim-buffergator'
-Plugin 'freitass/todo.txt-vim'
-Plugin 'ryanss/vim-hackernews'
+Plugin 'vimwiki/vimwiki'
 
 syntax enable
 filetype plugin indent on

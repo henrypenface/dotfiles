@@ -1,4 +1,4 @@
-" vim config for @henrypenface / carlclegg@gmail.com
+" vim config for @i_am_cjc / carl@cjc.im
 set shell=/bin/bash
 
 set nocompatible
@@ -9,12 +9,10 @@ call vundle#rc()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'sjl/gundo.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jeetsukumaran/vim-buffergator'
-Plugin 'freitass/todo.txt-vim'
-Plugin 'ryanss/vim-hackernews'
+Plugin 'vimwiki/vimwiki'
 
 syntax enable
 filetype plugin indent on
@@ -26,6 +24,7 @@ set shiftwidth=4
 set autoindent
 set backspace=2
 set expandtab
+set breakindent
 
 " Visual stuff
 set laststatus=2
@@ -62,7 +61,6 @@ nnoremap <Leader>j <c-w><Down>
 nnoremap <Leader>u :GundoToggle<CR>
 nnoremap <Leader>b :BuffergatorToggle<CR>
 nnoremap <Leader>t :NERDTreeToggle<CR>
-nnoremap <Leader>n :HackerNews<CR>
 
 " Some gui shizzle
 if has('gui_running')

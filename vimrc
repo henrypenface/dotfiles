@@ -32,7 +32,7 @@ let g:lightline = { 'colorscheme': 'wombat', }
 set cursorline
 set wildmenu
 set showmatch
-set number 
+set nonumber 
 
 set incsearch
 set hlsearch
@@ -47,15 +47,15 @@ let mapleader = "\<Space>"
 nnoremap <Leader>. :o .<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>x :wq<CR>
-" nnoremap <Leader>l :nohlsearch<CR>
+nnoremap <Leader>l :nohlsearch<CR>
 
 imap jj <esc>
 
 " Window movement
-nnoremap <Leader>h <c-w><Left>
-nnoremap <Leader>l <c-w><Right>
-nnoremap <Leader>k <c-w><Up>
-nnoremap <Leader>j <c-w><Down>
+nnoremap <Leader><Left> <c-w><Left>
+nnoremap <Leader><Right> <c-w><Right>
+nnoremap <Leader><Up> <c-w><Up>
+nnoremap <Leader><Down> <c-w><Down>
 
 " Plugin commands
 nnoremap <Leader>u :GundoToggle<CR>

@@ -4,16 +4,6 @@ set shell=/bin/bash
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
-
-Plugin 'gmarik/Vundle.vim'
-Plugin 'itchyny/lightline.vim'
-Plugin 'sjl/gundo.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jeetsukumaran/vim-buffergator'
-Plugin 'vimwiki/vimwiki'
-
 syntax enable
 filetype plugin indent on
 
@@ -24,11 +14,9 @@ set shiftwidth=4
 set autoindent
 set backspace=2
 set expandtab
-set breakindent
 
 " Visual stuff
 set laststatus=2
-let g:lightline = { 'colorscheme': 'wombat', }
 set cursorline
 set wildmenu
 set showmatch
@@ -57,20 +45,9 @@ nnoremap <Leader><Right> <c-w><Right>
 nnoremap <Leader><Up> <c-w><Up>
 nnoremap <Leader><Down> <c-w><Down>
 
-" Plugin commands
-nnoremap <Leader>u :GundoToggle<CR>
-nnoremap <Leader>b :BuffergatorToggle<CR>
-nnoremap <Leader>t :NERDTreeToggle<CR>
-
 " Some gui shizzle
 if has('gui_running')
     colorscheme evening
     set guifont=Terminus:h9
     set guioptions-=T
 endif
-
-" Plugin Options
-let NERDTreeQuitOnOpen=1
-
-let g:buffergator_suppress_keymaps=1
-let g:buffergator_viewport_split_policy="B"

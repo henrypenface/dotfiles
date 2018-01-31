@@ -9,6 +9,12 @@ filetype plugin indent on
 
 syntax on
 
+" Plugins
+call plug#begin()
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+call plug#end()
+
 set tabstop=4
 set shiftwidth=4
 set autoindent
@@ -24,9 +30,6 @@ set nonumber
 
 set incsearch
 set hlsearch
-
-" File type shenanigans
-au BufRead,BufNewFile *.dust set filetype=html
 
 "Some remapping for speed
 let mapleader = "\<Space>"
@@ -51,3 +54,12 @@ if has('gui_running')
     set guifont=Terminus:h9
     set guioptions-=T
 endif
+
+" Plugin specific options
+autocmd! User GoyoEnter Limelight
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
+autocmd! User GoyoLeave Limelight!
+nnoremap <Leader>g :Goyo<CR>
+
+

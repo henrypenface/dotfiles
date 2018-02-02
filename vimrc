@@ -55,10 +55,11 @@ if has('gui_running')
     set guioptions-=T
 endif
 
-" Plugin specific options
-autocmd! User GoyoEnter Limelight
+""" Plugin specific options
+" Guyo / Limelight for writing
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
+autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 nnoremap <Leader>g :Goyo<CR>
 

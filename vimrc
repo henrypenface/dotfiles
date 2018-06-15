@@ -31,6 +31,9 @@ set nonumber
 set incsearch
 set hlsearch
 
+set colorcolumn=80
+highlight ColorColumn ctermbg=gray
+
 "Some remapping for speed
 let mapleader = "\<Space>"
 

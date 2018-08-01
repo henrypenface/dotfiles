@@ -1,8 +1,9 @@
 #!/bin/bash
 # Requires scrot for the screenshot, imagemagick to do the blur thing, and i3lock to lock
 scrot /tmp/screenshot.png
-convert /tmp/screenshot.png -blur 0x5 /tmp/screenshotblur.png
-i3lock -i /tmp/screenshotblur.png
+convert /tmp/screenshot.png -blur 0x9 /tmp/screenshotblur.png
+convert /tmp/screenshotblur.png /home/cjc/AWESOME.png -gravity SouthEast -composite /tmp/awesomelock.png
+i3lock -i /tmp/awesomelock.png
 if [ ! -z "$1" ]; then
     systemctl suspend
 fi

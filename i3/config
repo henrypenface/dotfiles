@@ -15,7 +15,7 @@ set $mod Mod4
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:dina 8
+font terminus 10 
 
 #hide window decs because they are for losers...
 new_window none
@@ -73,12 +73,6 @@ bindsym $mod+f fullscreen
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
-# focus the parent container
-bindsym $mod+a focus parent
-
-# focus the child container
-#bindsym $mod+d focus child
-
 # switch to workspace
 bindsym $mod+q workspace 1
 bindsym $mod+w workspace 2
@@ -103,8 +97,6 @@ bindsym $mod+Shift+i move container to workspace 8
 bindsym $mod+Shift+o move container to workspace 9
 bindsym $mod+Shift+p move container to workspace 10
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+z restart
 # exit i3 (logs you out of your X session)
